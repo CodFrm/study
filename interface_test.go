@@ -1,4 +1,4 @@
-package study
+package main
 
 import (
 	"testing"
