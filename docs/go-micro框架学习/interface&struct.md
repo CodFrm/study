@@ -53,3 +53,18 @@ type Registry interface {
 	String() string
 }
 ```
+
+## api.Router
+路由接口
+```go
+type Router interface {
+	// Returns options
+	Options() Options
+	// Stop the router
+	Close() error
+	// Endpoint returns an api.Service endpoint or an error if it does not exist
+	Endpoint(r *http.Request) (*api.Service, error)
+	// Route returns an api.Service route
+	Route(r *http.Request) (*api.Service, error)
+}
+```

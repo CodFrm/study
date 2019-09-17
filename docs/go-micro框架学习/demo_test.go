@@ -1,3 +1,1 @@
 package micro
-
-func
