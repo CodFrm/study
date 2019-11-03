@@ -1,4 +1,4 @@
-module github.com/CodFrm/go-study
+module github.com/CodFrm/study/go
 
 go 1.12
 
