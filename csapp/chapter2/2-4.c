@@ -27,14 +27,23 @@ void show_pointer(void *x)
     show_bytes((byte_pointer)&x, sizeof(void *));
 }
 
+// centos 8 小端
 int main()
 {
-    int a = 1;
+    int a = 12345;
     show_int(a);
-    float b = 1;
+    float b = 12345;
     show_float(b);
-    void *c = (void *)1;
+    void *c = (void *)12345;
     show_pointer(c);
+    a = 0xabcd;
+    show_int(a);
+    b = 0xabcd;
+    show_float(b);
+    a = 1;
+    show_int(a);
+    a = 2;
+    show_int(a);
 
     return 0;
 }
