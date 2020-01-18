@@ -21,7 +21,6 @@ public:
     virtual ArrowKeys *CreateArrowKeys() = 0;
 };
 
-
 class AndroidInit : public Init
 {
 public:
@@ -52,7 +51,6 @@ public:
         return new AndroidArrowKeys();
     }
 };
-
 
 int main()
 {
