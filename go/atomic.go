@@ -27,7 +27,7 @@ func main() {
 	t1 = time.Now().Sub(t)
 	println(sum)
 	println(t1.String())
-	//cas原子操作
+	//原子操作
 	t = time.Now()
 	sum = 0
 	for i := int64(0); i < 500000000; i++ {
