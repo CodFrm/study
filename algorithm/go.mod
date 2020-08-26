@@ -1,4 +1,4 @@
-module github.com/CodFrm/dsk
+module github.com/CodFrm/study/algorithm
 
 go 1.13
 
