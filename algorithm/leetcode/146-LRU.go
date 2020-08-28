@@ -3,7 +3,7 @@ package main
 import "log"
 
 //https://leetcode-cn.com/problems/lru-cache/
-//数组形式实现(空间),另外可以用双向链表+哈希表实现(时间)
+//数组形式实现(O(n)),另外可以用双向链表+哈希表实现(O(1))
 type LRUCache struct {
 	capacity int
 	cache    map[int]int
@@ -71,11 +71,7 @@ func (this *LRUCache) FloatUp(key int) {
 }
 
 func (this *LRUCache) pos(pos int) int {
-	if pos == 0 {
-		return 0
-	} else {
-		return pos % this.capacity
-	}
+	return pos % this.capacity
 }
 
 /**

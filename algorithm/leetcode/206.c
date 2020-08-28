@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//https://leetcode-cn.com/problems/reverse-linked-list/
+//反转链表
 struct ListNode
 {
     int val;
