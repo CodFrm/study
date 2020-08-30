@@ -6,7 +6,7 @@ ifeq ($(DEBUG), TRUE)
 endif
 
 build:
-	$(g) "$(FILE)" -o debug/$(NAME) -lm
+	$(g) -g -fsanitize=address "$(FILE)" -o debug/$(NAME) -lm
 
 rebuild:clean build
 
